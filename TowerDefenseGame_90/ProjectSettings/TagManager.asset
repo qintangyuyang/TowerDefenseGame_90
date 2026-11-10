@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 3676829265
+    locked: 0
+  - name: Route
+    uniqueID: 4141946877
+    locked: 0
+  - name: Other
+    uniqueID: 520170409
+    locked: 0
