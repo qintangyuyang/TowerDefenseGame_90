@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "round": {
+    "duration": 90.0,
+    "baseHp": 100
+  },
+  "score": {
+    "perKill": 100,
+    "perHp": 10,
+    "winBonus": 1000
+  },
+  "skill": {
+    "damage": 50,
+    "radius": 3.5,
+    "cooldown": 12.0
+  },
+  "towers": [
+    {
+      "id": "tower_basic",
+      "range": 4.5,
+      "damage": 10,
+      "fireInterval": 0.7,
+      "bulletSpeed": 12.0,
+      "bulletLifeTime": 3.0
+    }
+  ],
+  "enemies": [
+    {
+      "id": "runner",
+      "displayName": "疾行者",
+      "maxHp": 30.0,
+      "moveSpeed": 3.2,
+      "baseDamage": 5,
+      "attackInterval": 1.0,
+      "attackRange": 0.8,
+      "ranged": false,
+      "color": "#FF4D4D",
+      "scale": 0.9
+    },
+    {
+      "id": "tank",
+      "displayName": "重装兵",
+      "maxHp": 120.0,
+      "moveSpeed": 1.4,
+      "baseDamage": 12,
+      "attackInterval": 2.0,
+      "attackRange": 2.8,
+      "ranged": true,
+      "color": "#FF9F1C",
+      "scale": 1.2
+    }
+  ],
+  "waves": [
+    {
+      "startTime": 0.0,
+      "enemyId": "runner",
+      "count": 8,
+      "interval": 1.2
+    },
+    {
+      "startTime": 20.0,
+      "enemyId": "tank",
+      "count": 3,
+      "interval": 4.0
+    },
+    {
+      "startTime": 35.0,
+      "enemyId": "runner",
+      "count": 10,
+      "interval": 1.0
+    },
+    {
+      "startTime": 55.0,
+      "enemyId": "tank",
+      "count": 4,
+      "interval": 3.5
+    },
+    {
+      "startTime": 70.0,
+      "enemyId": "runner",
+      "count": 12,
+      "interval": 0.7
+    }
+  ]
+}
