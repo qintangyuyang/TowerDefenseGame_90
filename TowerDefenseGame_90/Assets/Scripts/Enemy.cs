@@ -129,6 +129,7 @@ public class Enemy : MonoBehaviour
 
         if (registered && manager != null)
         {
+            manager.AddKill();
             manager.RemoveEnemy(this);
             registered = false;
         }

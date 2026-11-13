@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2746315539231249817}
   - component: {fileID: 868099952274826310}
+  - component: {fileID: -9127795040047751787}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -84,3 +85,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-9127795040047751787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7347792964408560283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb5257b50b7cfb48a7da9cc520a0501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
