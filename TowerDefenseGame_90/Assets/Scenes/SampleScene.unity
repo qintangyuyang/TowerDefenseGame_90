@@ -3641,6 +3641,7 @@ GameObject:
   - component: {fileID: 1020463138}
   - component: {fileID: 1020463137}
   - component: {fileID: 1020463139}
+  - component: {fileID: 1020463140}
   m_Layer: 0
   m_Name: GameRoot
   m_TagString: Untagged
@@ -3717,6 +3718,20 @@ MonoBehaviour:
   skillButton: {fileID: 2022011494}
   cooldownMask: {fileID: 1263458033}
   skillText: {fileID: 1089566034}
+  vfx: {fileID: 1020463140}
+--- !u!114 &1020463140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020463136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf9779616e527e047b232d78c5d8b14d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ringShader: {fileID: 4800000, guid: 5f14cff8149189f4c94d17b4313ccd68, type: 3}
 --- !u!1 &1054248097
 GameObject:
   m_ObjectHideFlags: 0

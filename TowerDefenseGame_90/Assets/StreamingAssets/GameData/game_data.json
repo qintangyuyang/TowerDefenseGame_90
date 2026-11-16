@@ -12,7 +12,14 @@
   "skill": {
     "damage": 50,
     "radius": 3.5,
-    "cooldown": 12.0
+    "cooldown": 12.0,
+    "vfx": {
+      "color": "#FFA51F",
+      "duration": 0.35,
+      "intensity": 1.5,
+      "ringWidth": 0.12,
+      "highQuality": true
+    }
   },
   "towers": [
     {
@@ -40,7 +47,7 @@
     {
       "id": "tank",
       "displayName": "重装兵",
-      "maxHp": 120.0,
+      "maxHp": 40.0,
       "moveSpeed": 1.4,
       "baseDamage": 12,
       "attackInterval": 2.0,

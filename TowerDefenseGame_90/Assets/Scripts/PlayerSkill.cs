@@ -10,6 +10,7 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private Button skillButton;
     [SerializeField] private Image cooldownMask;
     [SerializeField] private TMP_Text skillText;
+    [SerializeField] private SkillVfxController vfx;
 
     private GameManager manager;
     private LineRenderer rangeRenderer;
@@ -143,14 +144,19 @@ public class PlayerSkill : MonoBehaviour
         aiming = false;
 
         HideRange();
-
-        // 释放反馈：以技能中心扩散的橙色圆环
-        SkillEffect.Spawn(
-            center,
-            skill.radius,
-            new Color(1f, 0.65f, 0.1f, 1f),
-            0.35f);
-
+        if (vfx != null)
+        {
+            vfx.PlayCast(center, skill.radius);
+        }
+        else
+        {
+            // 没挂 Controller 时的兜底
+            SkillEffect.Spawn(
+                center,
+                skill.radius,
+                new Color(1f, 0.65f, 0.1f, 1f),
+                0.35f);
+        }
         UpdateSkillUI();
 
         Debug.Log($"Skill cast, hits: {hitCount}");

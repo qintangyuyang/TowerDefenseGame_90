@@ -65,6 +65,8 @@ public class SkillSettings
 
     // 技能冷却秒数。
     public float cooldown;
+
+    public SkillVfxSettings vfx;
 }
 
 [Serializable]
@@ -137,4 +139,14 @@ public class WaveEntry
 
     // 每只之间的间隔秒数。
     public float interval;
+}
+
+[System.Serializable]
+public class SkillVfxSettings
+{
+    public string color;
+    public float duration;
+    public float intensity;
+    public float ringWidth;
+    public bool highQuality;
 }
